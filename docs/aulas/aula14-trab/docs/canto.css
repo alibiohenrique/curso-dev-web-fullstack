@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Black.ttf);
+}
+
+body{
+    font-family: roboto;
+    background-image: url(images/singing.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+
+#inicio-page {
+    text-decoration: none;
+
+}
+
+#hover-aulas {
+    font-size: 2em;
+    color: #e7e247ff;
+    text-decoration-thickness: 3px;
+    text-decoration: underline;
+}
+
+main{
+    transform: translateY(300px);
+    font-size: 1.5em
+}
+main p{
+    margin-right: 2em;
+    text-align: center;
+}
+
+#p{
+	text-size: 1.3em;
+}
+
+#pp{
+	text-size: 1.5em;
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+.conteiner .card img{
+    margin-left: 5em;
+    width: 19em;
+    height: 20em;
+}
+
+.conteiner{
+    padding: 4em;
+    
+}
+
+main .card{
+    
+    color: #f0f8ff;
+    text-shadow:black 5px 5px 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin-bottom: 2em;
+    background: #59a3f0;
+    
+        -webkit-animation: focus-in-contract-bck 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: focus-in-contract-bck 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+
+main h1{
+    background-color: #59a3f0;
+    text-align: center;
+}
+
+
+main .card h3{
+    margin-bottom: 2em;
+}
+
+main .card img{
+    width: 400px;
+}
+
+main .card:nth-child(even) img{
+    order: 2
+}
+
+main .card{
+    padding:2em;
+}
+
+
+ @-webkit-keyframes card {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes focus-in-contract-bck{
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+  footer{
+    transform: translateY(300px);
+  }

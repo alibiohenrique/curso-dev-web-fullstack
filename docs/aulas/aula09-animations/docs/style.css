@@ -1,0 +1,42 @@
+@charset "utf-08";
+
+body {
+    background: linear-gradient(45deg, blue, rgb(138, 98, 105), yellow, rgb(0, 255, 0)) no-repeat;
+    background-size: 300% 300%;
+    background-position: top;
+    overflow: hidden;
+    height: 100vh;
+    animation: gradiente 0.5s infinite alternate;
+}
+
+img {
+    width: 450px;
+    position: absolute;
+    bottom: 5px;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.33s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: ;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(100vw - 500px));
+    }
+
+}
+
+@keyframes gradiente {
+    from {
+        background-position: 0 50%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}

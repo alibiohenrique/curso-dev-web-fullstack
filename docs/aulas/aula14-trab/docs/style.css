@@ -1,0 +1,483 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Black.ttf);
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+    color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background-image: url(images/guitar+background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5em;
+    width: 90vw;
+    height: 160px;
+    top: 1.5em;
+    border: #e7e247ff solid 3px;
+    position: absolute;
+    z-index: 4;
+    border-radius: 175px;
+    background-color: #005480ff;
+    transform: translate(-50%);
+    left: 50%;
+}
+
+header nav ul {
+    position: absolute;
+    display: flex;
+    z-index: 5;
+    margin-top: -25px;
+    transform: translateX(-850px);
+}
+
+header nav ul li a {
+    font-size: 2em;
+    color: #e7e247ff;
+    margin: 5px 20px;
+}
+
+header nav ul li a:hover {
+    color: #e9eddeff;
+    font-size: 2.1em;
+    transform: 0.2s;
+}
+
+header .logo img {
+    height: 160px;
+    transform: translateX(-80px);
+}
+
+header a {
+    text-decoration: none;
+}
+
+.menu-aulas{
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+}
+
+.hover-aulas{
+    display: inline-block;
+    color: #e7e247ff;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+.menu-aulas{
+    transform: translateX(-30px);
+    background: #005480ff;
+    border: #e7e247ff 2px solid;
+    text-shadow: 1px 1px 2px #9b7e46ff;
+    border-radius: 50px;
+    display: none;
+}
+
+header button{
+    text-shadow: 1px 1px 2px #9b7e46ff;
+    border: none;
+    background: #005480ff;
+    font-size: 1.7em;
+}
+header button:hover{
+    color: #e9eddeff;
+}
+
+.aulas:hover .menu-aulas{
+    display: block;
+}
+.mobile-menu-nav{
+    z-index: 3;
+    position: fixed;
+    transform: translate(86vw, 7vh);
+
+}
+
+.mobile-menu-nav button img{
+    width: 50px;
+}
+
+.mobile-menu-nav button{
+    background: #005480ff;
+    border: #e7e247ff 3px solid;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.mobile-menu-nav .dropdown-nav button{
+    border: none;
+    text-shadow: 1px 1px 2px #9b7e46ff;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-menu-nav a{
+    margin: 0;
+    text-decoration: none;
+    color: #e7e247ff;
+    text-shadow: 1px 1px 2px #9b7e46ff;
+    font-size: 25px;
+}
+
+.dropdown-nav{
+    display: none;
+    transform: translate(-35vh);
+    transform: translateX(-10vw);
+}
+
+.mobile-menu-nav:hover .dropdown-nav{
+    display: block;
+    background: #005480ff;
+    width: 300px;
+    color: #e7e247ff;
+    border: solid 3px;
+    border-radius: 100px;
+    padding: 15%;
+
+   
+}  
+.mobile-menu-nav .menu-aulas{
+    height: 110px
+}
+
+.mobile-menu-nav .menu-aulas a{
+    margin-top: 45px;
+    margin:25px ;
+}
+
+#inicio-page {
+    text-decoration: underline;
+
+}
+
+/* CONTENT - MENU */
+
+
+.background-video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    right: 0;
+}
+
+.content-main {
+    display: flex;
+    text-align: left;
+    position: relative;
+    flex-direction: column;
+    align-items: left;
+    background-attachment: fixed;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    margin-left: 5em;
+}
+
+.content-main h1 {
+    font-size: 3.7em;
+    color: #e9eddeff;
+    padding: 5px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.content-main p {
+    padding: 5px;
+    font-size: 1.8em;
+    color: #e9eddeff;
+    text-shadow: 2px 2px 2px black;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons a {
+    color: #e7e247ff;
+    background: transparent;
+    text-decoration: none;
+    border: #e7e247ff 2px solid;
+    padding: 10px;
+    border-radius: 50px ;
+    width: 150px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 1.3em;
+
+}
+.buttons a:hover {
+    color: black;
+    background: #e7e247ff;
+    border-radius: 50px ;
+
+}
+
+/* CONTENT - PARALLAX */
+
+main {
+    display: block;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    animation: surgir 3s ease;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+    border-radius: 76px;
+    width: 100%;
+    max-width: 80%;
+    min-height: 100%;
+    margin: 0 auto;
+    background-color: #59a3f0ff;
+    padding: 15px 15px;
+    border-radius: 50px;
+
+}
+
+section.modulo.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-color: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+section.modulo.parallax h1 {
+    color: #e9eddeff;
+    text-align: center;
+    font-size: 3.1em;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px black;
+    z-index: 1;
+
+}
+
+section.modulo.content {
+    padding: 20px 0;
+    background-color: #005480ff;
+}
+
+section.modulo h2 {
+    text-shadow: 2px 2px 2px black;
+    color: #e9eddeff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+}
+
+section.modulo p {
+    color: black;
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 30px;
+}
+
+section.modulo p span {
+    color: white;
+}
+
+
+section.modulo.parallax-1 {
+    background-image: url(images/music.jpg);
+}
+
+section.modulo.parallax-2 {
+    background-image: url(images/guitar.jpg);
+}
+
+section.modulo.parallax-3 {
+    background-image: url(images/singing.jpg);
+}
+
+section.modulo.parallax-4 {
+    background-image: url(images/piano.jpg);
+}
+
+section.modulo.parallax::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgb(0, 0, 0, 0) 20%, #000000 100%);
+}
+
+.surgir{
+    animation: surgir 3s ease;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+@keyframes surgir {
+
+    from {
+        opacity: 0;
+        translate: -100vw 0;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+footer {
+    width: 100vw;
+    font-weight: 600;
+    background: #9b7e46ff;
+    color: #034732;
+    padding: 2em;
+}
+
+.rf{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "form fr"
+}
+
+form, .fr {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 45vw;
+    align-items: center;
+    padding: 25px;
+}
+
+form {
+    width: 44vw;
+    grid-area: "form";
+}
+
+input {
+    width: 44vw;
+    height: 40px;
+    margin: 1em;
+}
+
+footer select {
+    width: 44vw;
+    height: 40px;
+}
+
+footer button {
+    width: 100px;
+    height: 40px;
+    background: #034732;
+    border-radius: 25px;
+    transition: 0.5s;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+footer button:hover {
+    transform: translateY(10px);
+}
+
+#msg {
+    height: 150px;
+}
+
+footer select {
+    margin: 1em;
+}
+
+footer p {
+    text-align: center;
+    font-size: 25px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.contatos {
+    text-align: left;
+}
+
+hr {
+    color: #fff;
+    border-width: 5px;
+    opacity: 1;
+}
+
+.cardimg {
+    height: 25px;
+}
+
+.fr{
+    grid-area: "fr";
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        display: none;
+    }
+
+    .mobile-menu-nav {
+        position: fixed;
+        transform: translate(0);
+        transform: translate(80vw);
+    }
+
+    .background-video {
+        object-fit: contain;
+        
+    }
+
+    .rf{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: "form" "fr";
+    }
+    form, .fr {
+        width: 80vw;
+    }
+    .content-main h1{
+        font-size: 1em;
+    }
+    .content-main{
+        font-size: 1em;
+        transform: translateX(-18vw);
+    }
+}

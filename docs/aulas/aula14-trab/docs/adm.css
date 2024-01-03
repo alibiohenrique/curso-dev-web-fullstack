@@ -1,0 +1,54 @@
+.h1 {
+    background: url(images/music.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50vh;
+    text-align: center;
+    z-index: 0;
+    text-shadow: 5px 5px 5px black;
+}
+
+.text {
+    background: #005380;
+    padding: 4em;
+    display: flex;
+    text-align: center;
+    text-justify: center;
+}
+
+.text h2{
+    color: #fff;
+    text-shadow: 5px 5px 5px black;
+    font-size: 1.4em;
+}
+
+.p {
+    margin: 0 auto;
+    background: #59a3f0ff;
+    font-size: 25px;
+    color: #000;
+    max-width: 80%;
+    padding: 0.5em;
+    border-radius: 50px;
+
+}
+.h3 {
+
+    background: url(images/backgroundadm1.png);
+    background-size: cover;
+    backface-visibility: visible;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 50vh;
+    text-align: center;
+    z-index: 0;
+    text-shadow: 5px 5px 5px black;
+}
+
+#inicio-page{
+    text-decoration: none;
+}
+
+#adm{
+    text-decoration: underline;
+}

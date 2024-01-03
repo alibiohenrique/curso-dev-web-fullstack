@@ -1,0 +1,6 @@
+/* CSS HEX */
+--lapis-lazuli: #005480ff;
+--ruddy-blue: #59a3f0ff;
+--maize: #e7e247ff;
+--beige: #e9eddeff;
+--chamoisee: #9b7e46ff;

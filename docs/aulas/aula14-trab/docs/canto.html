@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="canto.css">
+    <title>Escola de Musica</title>
+</head>
+
+<body>
+ <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+        </div>
+        <nav>
+            <ul>
+                <li> <a href="index.html" id="inicio-page">
+                        Início</a></li>
+                <li>
+                    <div class="aulas">
+                        <button id="hover-aulas">Aulas</button>
+                        <div class="menu-aulas">
+                            <a href="canto.html" id="cto">Canto</a>
+                            <a href="violao.html">Violão</a>
+                            <a href="teclado.html">Teclado</a>
+                        </div>
+                    </div>
+                </li>
+                <li> <a href="ped.html">Pedagogia </a></li>
+                <li> <a href="adm.html">Administração</a></li>
+                <li> <a href="#cadastro">Cadastro</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <div class="mobile-menu-nav">
+        <ul>
+            <button><img src="images/menu.png" alt=""></button>
+            <div class="dropdown-nav">
+                <li> <a href="index.html" id="inicio-page">Início</a></li>
+                <li>
+                    <div class="aulas">
+                        <button class="hover-aulas">Aulas</button>
+                        <div class="menu-aulas">
+                            <a href="canto.html">Canto</a><br>
+                            <a href="violao.html">Violão</a><br>
+                            <a href="teclado.html">Teclado</a><br>
+                        </div>
+                    </div>
+                </li>
+                <li> <a href="ped.html">Pedagogia </a></li>
+                <li> <a href="adm.html">Administração</a></li>
+                <li> <a href="#cadastro">Cadastro</a></li>
+            </div>
+        </ul>
+    </div>
+    <main class="conteiner">
+
+        <h1>Aula de canto </h1>
+
+        <section class="card">
+
+            <img src="images/fotos-marlon/marlonerosa.jpg" alt="">
+
+            <div class="text-focus-in">
+
+                <p id="pp"> Minha mãe é uma professora de canto em uma escola de música da vida. Ela ensina mais do que
+                    simples notas musicais; ela compartilha lições de resiliência e bondade. Sua dedicação e paixão pela
+                    música inspiram seus alunos a encontrar suas próprias vozes. Ela é um exemplo de excelência,
+                    comprometimento e amor pela vida. Minha gratidão por ser a melodia constante em minha vida é imensa.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <img src="images/fotos-marlon/Marlonepai.jpg" alt="teia">
+
+            <div class="text-focus-in">
+
+                <p id="p"> Meu pai, foi com ele que aprendi lições importantes que carrego comigo até hoje. Com ele, eu
+                    aprendi a gostar de música clássica, entre outros estilos musicais. E por último, mas não menos
+                    importante, foi com ele que aprendi a nunca desistir dos meus sonhos. Ele sim, foi o meu professor e
+                    mentor nessa jornada, que se chama vida. Obrigado pelas broncas e puxões de orelha que foram
+                    necessários para o meu crescimento pessoal e profissional. Muito obrigado por você existir. TE AMO!
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <img src="images/fotos-marlon/marlonmaeeclarise.jpeg" alt="teia">
+
+            <div class="text-focus-in">
+
+                <p id="pp">Querida professora,
+                    
+                    Sua dedicação inspiradora e comprometimento com todos os alunos transformam a sala de aula em um
+                    ambiente de aprendizado valioso e enriquecedor . Seu apoio incansável e sua paixão por ensinar
+                    deixam uma marca duradoura em nossas vidas. Obrigado por ser mais do que uma professora, e por
+                    sempre lembrar de mim !
+                    Com gratidão,
+                    Marlon
+
+
+
+
+                </p>
+
+            </div>
+
+        </section>
+    </main>
+                <footer>
+        <div class="rf">
+            <form id="cadastro">
+                <div class="cadastro-content">
+                    <h2>Faça seu cadastro</h2>
+                    <input type="text" required placeholder="Nome">
+                </div>
+                <div class="cadastro-content">
+                    <input type="text" required placeholder="E-mail">
+                </div>
+                <div class="cadastro-content">
+                    <h2></h2>
+                    <input type="text" required placeholder="Telefone">
+                </div>
+                <div class="cadastro-content">
+                    <input type="text" placeholder="Mensagem" id="msg">
+                </div>
+                <div class="cadastro-content">
+                    <select name="aulas">
+                        <option value="teclado">Aula de teclado</option>
+                        <option value="violao">Aula de violão</option>
+                        <option value="canto">Aula de canto </option>
+                    </select>
+                    <button type="submit"> Enviar</button>
+                </div>
+            </form>
+            <div class="fr">
+                <h2 id="contatos">Contatos & Endereço</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.1319760697024!2d-51.124269324446765!3d-30.033071374929314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519763cac2bb605%3A0x43dd87263dead867!2sUniRitter%20-%20Campus%20FAPA!5e0!3m2!1spt-BR!2sbr!4v1701272041043!5m2!1spt-BR!2sbr"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contatos">
+                    </p>
+                    <span><a href="https://instagram.com/turmaa.2023?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="><img
+                                src="https://icons.getbootstrap.com/assets/icons/instagram.svg" alt="" class="cardimg">
+                        </a> Turma A
+                    </span><br><br>
+                    <span><a
+                                        href="https://instagram.com/mhc634?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="><img
+                                            src="https://icons.getbootstrap.com/assets/icons/instagram.svg" alt=""
+                                            class="cardimg">
+                                    </a>@Mhc634
+                                </span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p>&copy; Desenvolvido por</p>
+        <p>Diogo, Gabriel, Henrique, Marlon e Misael</p>
+    </footer>
+    </body>
+
+</html>

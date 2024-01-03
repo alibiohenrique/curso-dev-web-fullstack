@@ -1,0 +1,193 @@
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Black.ttf);
+}
+
+
+body {
+
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+    color: #e7e247;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background-image: url(images/piano.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#inicio-page {
+    text-decoration: none;
+
+}
+
+#hover-aulas {
+    font-family: roboto;
+    font-size: 2em;
+    color: #e7e247ff;
+    text-decoration-thickness: 3px;
+    text-decoration: underline;
+}
+
+main, footer{
+    transform: translateY(300px);
+}
+main .container {
+    margin-top: 1em;
+    height: 100vh;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 50px;
+    background-color: #005480;
+}
+
+main .container2 {
+    margin-top: 1em;
+    height: 50vh;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 50px;
+    background-color: #005480;
+}
+
+main .container h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.container p, .container2 p {
+    text-align: center;
+    font-size: 25px;
+    color: #e9edde;
+}
+
+.container h2, .container2 h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #e7e247;
+}
+
+
+main .container1 {
+    background-color: #e7e247;
+    height: 90vh;
+    text-align: center;
+    transform: translateY(-20vh);
+
+}
+
+main .content {
+    margin: 0;
+    padding: 0;
+    width: 100vh;
+    height: 100vh;
+    height: 520px;
+    width: 900px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .navegation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+main .barra {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #ffff01;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+
+main .barra:hover {
+    background-color: #fff700de;
+}
+
+main input {
+    display: none;
+}
+
+main .slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+
+}
+
+main .slide {
+    width: 20%;
+    transition: .6s;
+}
+
+main .slide img {
+    width: 100%;
+    height: 100%;
+
+}
+
+main #slide1:checked~.s1 {
+    margin-left: 0;
+}
+
+main #slide2:checked~.s1 {
+    margin-left: -20%;
+}
+
+main #slide3:checked~.s1 {
+    margin-left: -40%;
+}
+
+main #slide4:checked~.s1 {
+    margin-left: -60%;
+}
+
+main #slide5:checked~.s1 {
+    margin-left: -80%;
+}
+
+
+main .fotos {
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    transform: translateY(1vh);
+    margin-top: 250px;
+}
+
+main .fotos img {
+    min-height: 20%;
+    align-items: center;
+    height: 350px;
+    border-radius: 150px;
+    margin-right: 2%;
+    align-self: center;
+    padding: 10px;
+}
+
+main .texto p {
+    margin-top: 10px;
+    font-size: 25px;
+    color: #005480;
+    
+
+}
+

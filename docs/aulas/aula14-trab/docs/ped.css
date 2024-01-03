@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Black.ttf);
+}
+
+body {
+    font-family: roboto;
+    background-image: url(images/fotos-diogo/back.jpg);
+
+}
+
+main{
+    font-size: 1.3em;
+}
+
+main p{
+    margin-right: 2em;
+    text-align: center;
+    text-shadow: #000000 5px 5px 5px ;
+}
+
+#inicio-page{
+    text-decoration: none;
+}
+
+#ped{
+    text-decoration: underline;
+}
+
+main{
+    width: 90vw;
+    margin-left: 5vw;
+    padding-top: 300px;
+}
+main .text-focus-in {
+    -webkit-animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+main .conteiner .card img {
+    margin-left: 5em;
+    width: 19em;
+    height: 20em;
+}
+
+main .conteiner {
+    padding: 4em;
+    margin-top: 15em;
+}
+
+main .card {
+    border-radius: 50px;
+    color: #e7e247;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin-bottom: 2em;
+    background: #59a3f0;
+    -webkit-animation: scale-in-ver-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-ver-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+main .card h3 {
+    margin-bottom: 2em;
+}
+
+main .card img {
+    margin-left: 5em;
+    border-radius: 10px;
+    width: 400px;
+}
+
+main .card:nth-child(even) img {
+    order: 2
+}
+
+main .card div {
+    padding: 2em;
+}
+
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes scale-in-ver-top {
+    
+    0% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+}
