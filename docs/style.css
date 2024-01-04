@@ -10,8 +10,8 @@
 
 
 body {
-    
-    
+
+
     width: 1500px;
     height: 100vh;
     margin: 0;
@@ -22,7 +22,7 @@ body {
 
 
 header {
-        display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 40px;
@@ -62,7 +62,7 @@ header nav ul li a:hover {
     left: 50%;
     transform: translate(-50%, -355px);
     text-align: center;
-    background-color: #161616   ;
+    background-color: #161616;
     height: 200px;
     width: 1300px;
     margin: 0 auto;
@@ -72,6 +72,12 @@ header nav ul li a:hover {
     justify-content: space-between;
     border-radius: 50px;
 }
+
+.container p {
+    color: white;
+    transform: translateX(35%);
+}
+
 
 /* PROJECTS */
 
@@ -124,11 +130,12 @@ header nav ul li a:hover {
 /* CONTACT */
 
 footer {
-    height: 30vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
 }
 
-.container-footer{
-    position: absolute;
-    margin-bottom: 5px;
-
-}
