@@ -6,27 +6,40 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    scroll-behavior: smooth;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
 body {
-    margin: 0;
+    background-image: url(images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg);
+    background-position: cover;
 }
 
-/* HEADER */
+main {
+    padding-bottom: 100px;
+}
+
+section {
+    min-height: calc(85vh);
+    padding: 15% 5rem;
+}
+
+/* ||  HEADER  ||*/
 
 .header {
+    transform: translate(15%, 5%);
     top: 0;
-    left: 0 ;
+    left: 0;
+    height: 80px;
     padding: 30px 70px;
-    width: 100%; 
+    width: 80%;
     background-color: #6540a5;
     position: absolute;
     z-index: 1;
     display: flex;
     justify-content: space-between;
-
+    border-radius: 50px;
 }
 
 .logo {
@@ -43,88 +56,416 @@ body {
     transition: 0.25s;
 }
 
-.navbar a:hover, .navbar a.active {
-    color:orange;
+.navbar a:hover,
+.navbar a.active {
+    color: orange;
     text-decoration: underline;
     text-decoration-thickness: 2px;
 }
 
-/* ABOUT */
+/* ||  HOME  ||*/
 
-.container {
-    height: 20vh;
+.home {
     display: flex;
     align-items: center;
+    align-self: top;
     text-align: center;
-    flex-direction: column;
-    padding: 2.5vh;
-    transform: translate(15%,10vw);
+    justify-content: space-between;
+    padding: 0 0;
+    transform: translate(15%, 5vw);
     width: 80vw;
     background-color: #161616;
     border-radius: 50px;
 }
 
 .home-content {
-    max-width: 760px;
+    /* ||  CONTENT-TEXT  ||*/
+    background-color: transparent;
+    max-width: 45%;
+    padding: 0 50px;
 }
 
-.container h1 {
+.home-content h1 {
     text-decoration: underline;
+    font-size: 2.5rem;
 }
 
-.container h1,h3 {
-    color:white;
-    margin-top: 1.5vh;
+.home-content p {
+    font-size: 0.85rem;
 }
+
+.home-content span {
+    color: #6540a5;
+    font-weight: 700;
+}
+
+.home-content h1,
+p {
+    color: white;
+    margin-top: 2.5vh;
+}
+
+.btn-box {
+    /* ||  BUTTONS  ||*/
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 35rem;
+    height: 3.5rem;
+
+}
+
+.btn-box .btn {
+    /* ||  BUTTONS  ||*/
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 85%;
+    background-color: #6540a5;
+    border-radius: .8rem;
+    border: .2rem solid #6540a5;
+    font-size: 1rem;
+    color: #161616;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: #161616;
+    color: #161616;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box .btn:hover:hover {
+    color: #6540a5;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+
+}
+
+.btn-box .btn:nth-child(2) {
+    background: transparent;
+    color: #6540a5;
+}
+
+.btn-box .btn:nth-child(2):hover {
+    color: #161616;
+}
+
+.btn-box .btn:nth-child(2)::before {
+    background: #6540a5;
+}
+
+.home-sci {
+    /* ||  SOCIAL-MEDIAS  ||*/
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(250px);
+}
+
+.home-sci a {
+
+    color: #6540a5;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: solid .2rem #6540a5;
+    border-radius: 50%;
+    font-size: 25px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #6540a5;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.home-sci a:hover {
+    color: #161616;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+}
+
+.home-image {
+    width: 50%;
+    border-radius: 0 50px 50px 0;
+    overflow: hidden;
+
+}
+
+.home-image img {
+    width: 155%;
+    height: 100%;
+    background: transparent;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    transition: background 1s;
+    border-radius: 0 50px 50px 0;
+}
+
+.home-image:hover .overlay {
+    background: #161616;
+    opacity: 0.8;
+}
+
 
 /* PROJECTS */
 
-.container-cards{
+
+.container-cards {
     position: absolute;
     transform: translate(15%, 12.5vw);
     text-align: center;
     background-color: #161616;
-    height: 400px;
     width: 80vw;
     margin: 0 auto;
     display: flex;
     align-content: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    max-height: 85vh;
+    justify-content: space-evenly;
     border-radius: 50px;
 }
 
+.cards-header,
+.cards-content {
+    width: 100%;
+    padding: 5px 0;
+    flex: 0 0 100%;
+}
+
+.cards-header h3,
+.cards-content p {
+    color: white;
+}
+
+.cards-header h3 {
+    font-size: 50px;
+}
+
+.cards-content p {
+    font-size: 20px;
+}
+
+.container-cards:hover .card:hover {
+    transform: scale(1.0);
+    z-index: 1;
+}
+
+.container-cards:hover .card:not(:hover) {
+    opacity: 0.5;
+}
 
 .card {
     width: 300px;
     max-height: 250px;
     margin: 5px;
-    transition: all 1.3s cubic-bezier;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
 }
-
-.card img:hover {
-    width: 95%;    
-}
-
-.card:hover img:not(:hover) {
-    filter: drop-shadow(#BA3B46);
-}
-
-
 
 .card img {
-    width: 90%;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.3);
+}
+
+/* ABOUT */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    align-self: top;
+    text-align: center;
+    padding: 0 0;
+    transform: translate(15%, 127.5vh);
+    width: 80vw;
+    background-color: #161616;
+    border-radius: 50px;
+}
+
+.heading {
+    margin-top: 50px;
+    font-size: 5rem;
+    color: white;
+}
+
+.heading span {
+    color: #6540a5;
+}
+
+.about-img {
+    max-height: 375px;
+    max-width: 375px;
+    overflow: hidden;
+}
+
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 50%;
+    border: solid .5em #6540a5;
+}
+
+.about-content {
+    margin: 30px;
+}
+
+.about-content h3 {
+    font-size: 3rem
+}
+
+.about-content h4 {
+    font-size: 1.5rem
+}
+
+.about-content p {
+    font-size: 1rem;
+    margin: 2rem 0 3rem;
 }
 
 /* CONTACT */
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
+.contact {
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+    transform: translate(15%, 137.5vh);
+    width: 80vw;
+    background-color: #161616;
+    border-radius: 50px;
 }
 
+.contact .heading {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contact form {
+    max-width: 70rem;
+    padding-bottom: 8rem;
+
+}
+
+.contact form .input-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field {
+    position: relative;
+    width: 49%;
+    margin: .8rem 0%;
+}
+
+.contact form .input-box .input-field input:focus,
+.contact form .textarea-field textarea:focus {
+    outline: none;
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: white;
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid #6540a5;
+}
+
+.contact form .textarea-field {
+    margin: .8rem 0 2.7rem;
+}
+
+.contact form .textarea-field textarea {
+    width: 196%;
+}
+
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact .btn {
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    transform: translateY(130vh);
+    background-color: #161616;
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-icon-top a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background-color: #6540a5;
+}
