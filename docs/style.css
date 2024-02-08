@@ -12,6 +12,8 @@
 
 
 body {
+    overflow-x: hidden;
+
     background-image: url(images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg);
     background-position: cover;
 }
@@ -247,9 +249,7 @@ p {
     opacity: 0.8;
 }
 
-
 /* PROJECTS */
-
 
 .container-cards {
     position: absolute;
@@ -360,10 +360,12 @@ p {
 }
 
 .about-content h3 {
+    color: white;
     font-size: 3rem
 }
 
 .about-content h4 {
+    color: white;
     font-size: 1.5rem
 }
 
@@ -375,7 +377,7 @@ p {
 /* CONTACT */
 
 .contact {
-    min-height: auto;
+    max-height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -388,7 +390,9 @@ p {
 }
 
 .contact .heading {
-    padding-top: 50px;
+    font-size: 50px;
+    
+    padding-top: 90px;
     margin-bottom: 50px;
 }
 
@@ -457,15 +461,75 @@ p {
     background-color: #161616;
 }
 
+.footer-sci {
+    transform: translateX(-27.5vw);
+}
+
+.footer-sci a {
+    color: #6540a5;
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: solid .15rem #6540a5;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 35px;
+}
+
+.footer-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    transition: 0.5s;
+    z-index: -1;
+
+}
+
+.footer-sci a:hover {
+    background-color: #6540a5;
+    color: #161616;
+}
+
 .footer-text p {
     font-size: 1.6rem;
 }
 
 .footer-icon-top a {
+    overflow: hidden;
+    transform: translateX(26.5vw);
     position: relative;
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
     padding: .8rem;
-    background-color: #6540a5;
+    font-size: 35px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: solid 0.15rem #6540a5;
 }
+
+.footer-icon-top a::before {
+    background: #6540a5;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: 1s;
+}
+
+.footer-icon-top a:hover::before {
+    width: 100%;
+}
+
+.footer-icon-top a:hover {
+    color: #161616;
+}
+
+
